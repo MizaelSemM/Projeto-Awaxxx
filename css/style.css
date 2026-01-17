@@ -31,6 +31,7 @@ header .nav-bar img{
 .nav-bar nav{
     display: flex;
     position: absolute;
+    z-index: 99;
     bottom: 0px;
     right: 0px;
     height: calc(100vh - 100px);
@@ -60,6 +61,7 @@ header .nav-bar img{
     width: 300vw;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
 }
 #home .slide{
     width: 100vw;
@@ -124,4 +126,135 @@ header .nav-bar img{
 }
 .widget-body .active{
     background-color: #b98b59;
+}
+#about-us{
+    height: calc(100vh - 100px);
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+#about-us .container{
+    flex-direction: column;
+    align-items: center;
+}
+#about-us .widget-title{
+    color: #000;
+    margin-top: 20px;
+}
+#about-us .widget-descri{
+    color: #aeaeae;
+    margin-bottom: 20px;
+}
+#about-us .about-text{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-weight: 300;
+    color: #242424;
+}
+#about-us .about-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#about-us a{
+    padding: 10px 40px;
+    background-color: #b98b59;
+    margin: 20px;
+    display: inline-block;
+    color: white;
+    border-radius: 20px;
+}
+#about-us .about-video{
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.about-video img{
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.8);
+    margin: 20px;
+}
+
+#services{
+    height: calc(100vh - 100px);
+    background-color: #000;
+}
+#services .container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 100%;
+}
+#services .widget-title{
+    color: #fff;
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+#services .widget-descri{
+    color: #aeaeae;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+#services .widget-body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#services .high, .modern, .regular, .fast{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 8px;
+    margin: 30px 0px;
+    text-align: center;
+}
+#services p{
+    color: #686868;
+    font-size: 10px;
+}
+
+#our-projects{
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+}
+#our-projects .container{
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: start;
+    background-color: red;
+}
+#our-projects .widget-title{
+    color: #000;
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+#our-projects .widget-descri{
+    color: #aeaeae;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+#our-projects .projects-bar{
+    width: 100%;
+    height: 150px;
+    background-color: purple;
+}
+#our-projects .widget-body{
+    height: 70%;
+    width: 100%;
+    background-color: blue;
 }
