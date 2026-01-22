@@ -3,13 +3,17 @@ header{
     display: flex;
     justify-content: center;
     background-color: #000;
+    position: relative;
+    z-index: 10;
 }
 .container{
     width: 100%;
-    min-width: 360px;
+    min-width: 320px;
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 16px;
+    position: relative;
+    z-index: 1;
 }
 header .wrapper{
     min-width: 300px;
@@ -22,7 +26,7 @@ header .logo{
     flex: 1;
 }
 .logo img{
-    width: 80px;
+    width: 60px;
 }
 header .nav-bar{
     flex: 1;
@@ -31,5 +35,155 @@ header .nav-bar{
     justify-content: end;
 }
 .nav-bar nav{
-    display: none;
+    display: flex;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+.nav-bar img{
+    cursor: pointer;
+}
+.nav-bar ul{
+    position: absolute;
+    right: 0;
+    top: 100px;
+    color: white;
+    width: 60%;
+    height: calc(100vh - 100px);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.nav-bar li{
+    margin: 20px 50px;
+}
+.nav-bar a:hover{
+    color: #b98b57;
+}
+
+#home{
+    min-height: calc(100vh - 100px);
+    background-image: url(../assets/images/bg.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#home::before{
+    content: "";
+    inset: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.slider{
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+}
+.slider-track{
+    display: flex;
+}
+.slide{
+    min-width: 100%;
+    min-height: calc(100vh - 100px);
+    scroll-snap-align: start;
+}
+.card{
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+.card strong{
+    color: #b68b58;
+}
+.card p{
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+.card a{
+    font-size: 13px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    padding: 10px 55px;
+    border-radius: 20px;
+    background-color: #b08453;
+    margin-top: 40px;
+}
+.card .pointer{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.card .point{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b98b59;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card .point:hover{
+    background-color: #b98b59;
+}
+.card .active{
+    background-color: #b98b59;
+}
+.widget{
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+.widget-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+}
+.widget-header .title{
+    color: #000;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.widget-header .subtitle{
+    color: #adadad;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.layout{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.content{
+    margin-top: 30px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.content .text{
+    color: #242424;
+    font-size: 1rem;
+}
+.content .btn{
+    display: inline-block;
+    padding: 10px 55px;
+    background-color: #b98b59;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 13px;
+    margin-top: 2rem;
+}
+.layout .media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media img{
+    width: 100%;
+    min-width: 150px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.8);
 }
