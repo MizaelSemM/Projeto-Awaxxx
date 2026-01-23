@@ -1,3 +1,6 @@
+
+/*header*/
+
 header{
     height: 100px;
     display: flex;
@@ -58,12 +61,15 @@ header .nav-bar{
     color: #b98b57;
 }
 
+/*Banner/Home*/
+
 #home{
     min-height: calc(100vh - 100px);
     background-image: url(../assets/images/bg.jpg);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 }
 #home::before{
     content: "";
@@ -133,6 +139,9 @@ header .nav-bar{
 .card .active{
     background-color: #b98b59;
 }
+
+/*About us*/
+
 .widget{
     font-family: 'Montserrat';
     font-weight: 400;
@@ -154,7 +163,7 @@ header .nav-bar{
     font-weight: 600;
     font-size: 1rem;
 }
-.layout{
+#about-us .layout{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -168,7 +177,7 @@ header .nav-bar{
     color: #242424;
     font-size: 1rem;
 }
-.content .btn{
+.btn{
     display: inline-block;
     padding: 10px 55px;
     background-color: #b98b59;
@@ -185,5 +194,135 @@ header .nav-bar{
 .media img{
     width: 100%;
     min-width: 150px;
+    max-width: 500px;
+    margin-bottom: 20px;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.8);
+}
+
+/*Services*/
+
+#services{
+    min-height: calc(100vh - 100px);
+    background-color: #000;
+}
+#services .title{
+    color: #fff;
+}
+#services .layout{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+#services .card h3{
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+#services .card p{
+    font-size: 13px;
+    color: #797979;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+#our-projects{
+    min-height: calc(100vw - 100px);
+    margin-bottom: 30px;
+}
+#our-projects .wrapper{
+    width: 100%;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+#our-projects .wrapper ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 5px;
+    background-color: #ededed;
+    border-radius: 20px;
+    border: 1px solid #cfcfcf;
+}
+#our-projects .wrapper li{
+    padding: 10px;
+    font-size: 15px;
+    padding: 10px;
+    color: #000000;
+    border-right: 1px solid #cfcfcf;
+}
+#our-projects .wrapper li:last-child{
+    border: none;
+}
+#our-projects .wrapper a{
+    border-bottom: 3px solid transparent;
+    padding-bottom: 8px;
+}
+#our-projects .wrapper a:hover{
+    border-bottom: 3px solid #b98b59;
+}
+#our-projects .wrapper .active{
+    border-bottom: 3px solid #b98b59;
+}
+#our-projects .layout{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+#our-projects .layout image:nth-child(n + 7){
+    display: none;
+}
+#our-projects .layout .image img{
+    width: 100%;
+    display: block;
+    z-index: 1;
+}
+#our-projects .layout .image{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+#our-projects .layout .image h3{
+    position: absolute;
+    top: 20%;
+    z-index: 3;
+    color: #fff;
+    display: none;
+}
+#our-projects .layout .image p{
+    position: absolute;
+    top: 40%;
+    z-index: 3;
+    color: white;
+    text-align: center;
+    display: none;
+}
+#our-projects .layout .image:hover h3 {
+    display: flex;
+}
+#our-projects .layout .image:hover p {
+    display: flex;
+}
+
+#our-projects .layout .image::before{
+    content: "";
+    inset: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+#our-projects .layout .image:hover::before{
+    opacity: 1;
+}
+#our-projects .center-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#our-projects .btn{
+    margin-top: 0px;
 }
