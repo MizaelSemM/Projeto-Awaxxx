@@ -108,6 +108,8 @@
     }
 }
 
+
+
 /* Desktop */
 @media (min-width: 1024px) {
     .nav-bar {
@@ -269,7 +271,8 @@
     #premiun .slide {
         min-height: 90dvh;
     }
-    #premiun .btn{
+
+    #premiun .btn {
         margin-bottom: 30px;
     }
 
@@ -281,20 +284,34 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         padding: 30px;
     }
-    #some-facts .card-services{
+
+    #some-facts .card-services {
         justify-content: start;
     }
 
     #mapa {
-        min-height: 43dvh;
+        min-height: 63dvh;
+    }
+
+    #mapa .wrapper {
+        height: clamp(30rem, 40rem, 41rem);
     }
 
     #mapa .layout {
         justify-content: start;
+        height: 100%;
+        align-items: center;
     }
 
+
     .footer-site {
-        height: 30dvh;
+        height: 40dvh;
+    }
+
+    .footer-site .wrapper {
+        height: 100%;
+        display: flex;
+        align-items: center;
     }
 
     .footer-site .layout {
@@ -323,6 +340,7 @@
     .footer-site .newsletter-card {
         width: 100%;
         height: 15rem;
+        padding-top: 17%;
     }
 
     .footer-copy {
