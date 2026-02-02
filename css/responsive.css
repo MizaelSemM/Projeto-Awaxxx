@@ -1,0 +1,332 @@
+/* Tablet */
+@media (min-width: 768px) {
+    #services .layout-2-cols {
+        grid-template-columns: 1fr 1fr;
+        height: 25rem;
+    }
+
+    #our-projects .layout-2-cols {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto 20px;
+    }
+
+    #our-projects .wrapper {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #our-team .pointer {
+        position: absolute;
+        inset: 95% 0 0 0;
+    }
+
+    #our-team .layout {
+        gap: 20px;
+    }
+
+    #our-team .slide {
+        min-height: 50rem;
+        display: flex;
+    }
+
+    .card-team-two {
+        display: flex;
+    }
+
+    .patrocineos img:nth-child(n + 5) {
+        display: flex;
+    }
+
+    .patrocineos .wrapper {
+        gap: 40px;
+    }
+
+    .patrocineos .wrapper img {
+        width: 110px;
+    }
+
+    #price .layout {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 0px;
+    }
+
+    #price .card:last-child {
+        margin-bottom: 0px;
+    }
+
+    #clients {
+        height: 60dvh;
+    }
+
+    #some-facts .layout-2-cols {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #contact-us {
+        min-height: 55dvh;
+    }
+
+    #mapa {
+        min-height: 80dvh;
+    }
+
+    #mapa p {
+        font-size: 1.1rem;
+    }
+
+    #mapa img {
+        width: 50px;
+        margin-right: 5px;
+    }
+
+    .footer-site {
+        height: 50dvh;
+    }
+
+    .footer-site .newsletter-card {
+        font-size: 20px;
+    }
+
+    .footer-main .redes-sociais img {
+        width: 2.6rem;
+    }
+
+    .footer-copy {
+        margin-top: 0px;
+    }
+
+    .footer-site .newsletter-card {
+        width: 70%;
+    }
+
+    .footer-text .text-footer {
+        font-size: 1.1rem;
+    }
+
+    .footer-main .redes-sociais {
+        margin-bottom: 0px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .nav-bar {
+        width: 100%;
+    }
+
+    .nav-bar img {
+        display: none;
+    }
+
+    .nav-bar ul {
+        position: static;
+        top: 0;
+        background-color: transparent;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        gap: 15px;
+    }
+
+    .nav-bar li {
+        margin: 0px;
+        font-family: "Montserrat";
+        font-weight: 600;
+    }
+
+    .nav-bar a {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        color: #999;
+        border-bottom: 4px solid transparent;
+        font-family: 700;
+    }
+
+    .nav-bar a:hover {
+        border-bottom: 4px solid #b88a58;
+    }
+
+    #about-us .layout-2-cols {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 50px;
+    }
+
+    .layout .media {
+        justify-content: end;
+    }
+
+    #about-us .content {
+        text-align: start;
+    }
+
+    #services .layout-4-cols {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 19rem;
+        place-items: center;
+        margin-top: 0px;
+        height: auto;
+    }
+
+    #services .card {
+        height: 60%;
+        padding: 60px;
+        border-left: 2px solid #383838;
+    }
+
+    #services .card:last-child {
+        border-right: 2px solid #383838;
+    }
+
+    #services .card:first {
+        border-right: 2px solid #383838;
+    }
+
+    #our-projects {
+        min-height: auto;
+    }
+
+    #our-projects .layout-4-cols {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto 40px;
+        gap: 10px;
+    }
+
+    #our-projects .layout image:nth-child(n + 7) {
+        display: flex;
+    }
+
+    #our-projects .wrapper {
+        padding-left: 260px;
+        padding-right: 260px;
+    }
+
+    .card-team-three {
+        display: flex;
+    }
+
+    #clients {
+        height: 80dvh;
+    }
+
+
+    .patrocineos img:nth-child(n + 2) {
+        display: flex;
+    }
+
+    .patrocineos .wrapper {
+        gap: 50px;
+    }
+
+    .patrocineos .wrapper img {
+        width: 125px;
+    }
+
+    #price .layout {
+        margin-top: 40px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 30px;
+        gap: 15px;
+    }
+
+    .price-card {
+        width: 100px;
+    }
+
+    .price-card h1 {
+        font-size: 2.5rem;
+    }
+
+    .price-card h3 {
+        font-size: 1rem;
+    }
+
+    .price-card h5 {
+        font-size: 1rem;
+        position: relative;
+        bottom: 15px;
+    }
+
+    .price-card p {
+        font-size: 0.9rem;
+    }
+
+    #premiun .layout-2-cols {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    #premiun .card-pointer {
+        grid-column: 1/3;
+    }
+
+    #premiun .card-text {
+        border: none;
+    }
+
+    #premiun .slide {
+        min-height: 90dvh;
+    }
+    #premiun .btn{
+        margin-bottom: 30px;
+    }
+
+    #premiun .card-pointer {
+        border-top: 2px solid #d8d8d8;
+    }
+
+    #some-facts .layout-4-cols {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 30px;
+    }
+    #some-facts .card-services{
+        justify-content: start;
+    }
+
+    #mapa {
+        min-height: 43dvh;
+    }
+
+    #mapa .layout {
+        justify-content: start;
+    }
+
+    .footer-site {
+        height: 30dvh;
+    }
+
+    .footer-site .layout {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .newsletter {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .footer-text {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-top: 20px;
+    }
+
+    .footer-main {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-items: start;
+        margin-top: 20px;
+    }
+
+    .footer-site .newsletter-card {
+        width: 100%;
+        height: 15rem;
+    }
+
+    .footer-copy {
+        position: relative;
+        top: -25px;
+    }
+}
